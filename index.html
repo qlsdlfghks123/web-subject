@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>프론트엔드(Front-end)란 무엇인가?</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="mode-full">
+
+    <header>
+        <h1>Front-end Dev</h1>
+        <nav>
+            <div class="mode-container">
+                <button id="btn-html">HTML만 보기</button>
+                <button id="btn-css">HTML + CSS 보기</button>
+                <button id="btn-full" class="active">완성형 보기 (Full)</button>
+            </div>
+        </nav>
+    </header>
+
+
+    <main>
+        <section class="hero">
+            <h2>웹을 만드는 눈, 프론트엔드</h2>
+            <p>사용자가 웹사이트에서 마주하는 모든 시각적인 요소와 상호작용을 설계하고 구현하는 기술입니다.</p>
+        </section>
+
+
+        <section class="pillars">
+            <div class="card" id="card-html">
+                <h3>HTML</h3>
+                <p class="tag">#뼈대 #구조</p>
+                <p>웹페이지의 기본 뼈대를 만듭니다. 텍스트, 이미지, 버튼 등 화면에 들어갈 요소를 정의하는 역할을 합니다.</p>
+            </div>
+            <div class="card" id="card-css">
+                <h3>CSS</h3>
+                <p class="tag">#피부 #디자인</p>
+                <p>만들어진 뼈대를 예쁘게 꾸밉니다. 색상, 레이아웃, 애니메이션을 더해 사용자에게 보기 좋은 화면을 제공합니다.</p>
+            </div>
+            <div class="card" id="card-js">
+                <h3>JavaScript</h3>
+                <p class="tag">#근육 #동작</p>
+                <p>웹페이지에 생명을 불어넣습니다. 버튼 클릭 시 화면 전환, 데이터 처리 등 역동적인 상호작용을 담당합니다.</p>
+            </div>
+        </section>
+
+
+        <section class="interactive-zone">
+            <h3>JavaScript 작동 테스트</h3>
+            <p>아래 버튼을 클릭해 보세요. 완성형 모드에서만 숫자가 실시간으로 올라갑니다.</p>
+            <div class="click-box">
+                <button id="action-btn">프론트엔드 응원하기 👏</button>
+                <p>누적 응원 수: <span id="count">0</span>회</p>
+            </div>
+        </section>
+    </main>
+
+
+    <footer>
+        <p>© 2026 경남정보대 중간고사 과제</p>
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
